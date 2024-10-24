@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario con tabla</title>
+    <link rel="stylesheet" href="../estilo.css">
+    <script type="text/javascript" src="P5archivo1.js"></script>
+    <link rel="stylesheet" href="../tabla.css">
+</head>
+<body>
+    <h1 id="title">Inscripción</h1>
+    <h2>Informaciones personales</h2>
+    <form action="">
+        <b>Nombre Completo: </b><input type="text" name="nombre" id="nombre" required><br><br>
+        <b>Correo: </b><input type="email" name="correo" id="correo" required><br><br>
+        <b>Género: </b><input type="radio" name="genero" id="hombre" value="Hombre">Hombre
+        <input type="radio" name="genero" id="mujer" value="Mujer">Mujer
+        <input type="radio" name="genero" id="otro" value="Otro">Otro<br><br>
+        <b>Fecha de nacimiento: </b><input type="datetime-local" name="fecha" id="fecha" required>
+        <br><br><br>
+        <h2>Detalles personales</h2>
+        <b>Intereses: </b><br><input type="checkbox" name="intereses" id="deportes" value="Deportes">Deportes
+        <br><input type="checkbox" name="intereses" id="musica" value="Música">Música
+        <br><input type="checkbox" name="intereses" id="viajes" value="Viajes">Viajes<br><br>
+        <b>Color Favorito: </b><input type="color" name="color" id="color"><br><br>
+        <b>Nivel de Satisfacción: </b><input type="range" name="satisf" id="satisf"><br>
+    </form><br><br>
+    <button type="button" onclick="registrar()">Confirmar</button>
+    <br><br><table id="inscripcion"></table><br><br>
+
+    <fieldset><br><br>
+        <a href="../Portafolio.html" id="back">Volver al Inicio</a>
+        <h4>Ir a practicas:</h4>
+            <a href="P2.html">Practica 2: HTML (Formulario)</a><br>
+            <a href="P3archivo1.html">Practica 3: Fiestas Francesas</a><br>
+            <a href="P3archivo2.html">Practica 3: Las 7 Maravillas del Mundo</a><br>
+            <a href="P3archivo3.html">Practica 3: Random Images Generator</a><br>
+            <a href="P4archivo1.html">Practica 4: Evaluación de Calificaciones</a><br>
+            <a href="P4archivo2.html">Practica 4: Factoria Recursivo</a><br>
+            <a href="P4archivo3.html">Practica 4: Registro</a>
+    </fieldset>
+</body>
+</html>

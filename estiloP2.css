@@ -1,0 +1,90 @@
+#back {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #4a0000;
+    color: #fff;
+    border-radius: 5px;
+    align-items: center;
+}
+
+a {
+    color: #4a0000;
+}
+
+h1 {
+    text-align: center;
+    color: #4a0000;
+    margin-bottom: 20px;
+}
+
+.container {
+    padding: 20px;
+    width: 100%;
+    text-align: center;
+    box-shadow: #4a0000;
+}
+
+body {
+    background-color: #f4f4f9; 
+    margin: 0;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.input {
+    margin-bottom: 20px;
+}
+
+input[type="text"] {
+    width: 70%;
+    padding: 10px;
+    margin-right: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    padding: 10px;
+    background-color: #4a0000;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #660000;
+}
+
+table {
+    width: 70%;
+    margin-bottom: 20px;
+    margin: 0 auto 20px auto;
+    border-collapse: collapse;
+    border: 1px solid #ccc;
+}
+
+th, td {
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+    text-align: left;
+}
+
+th:last-child, td:last-child {
+    border-right: 1px solid #ccc;
+    width: 70%;
+}
+
+th:first-child, td:first-child {
+    width: 30%;
+}
+
+thead tr {
+    background-color: #ccccd737;
+}
+
+.completada {
+    text-decoration: line-through;
+    color: #888;
+}
+

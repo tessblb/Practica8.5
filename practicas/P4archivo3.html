@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro</title>
+    <link rel="stylesheet" href="../estilo.css">
+    <link rel="stylesheet" href="../tabla.css">
+
+    <script>
+        function registro() {
+            let nombre = document.getElementById("nombre").value;
+            let correo = document.getElementById("correo").value;
+            let edad = document.getElementById("edad").value;
+            let fecha = document.getElementById("fecha").value;
+            let color = document.getElementById("color").value;
+
+            let resultado = `Sos ${nombre}, tu correo es ${correo}, tienes ${edad} años, naciste el ${fecha}, tu color favorito es el: ${color}`;
+
+            if (document.getElementById("male").checked) {
+                resultado += ", y sos un hombre.";
+            } else if (document.getElementById("female").checked) {
+                resultado += ", y sos una mujer.";
+            } else if (document.getElementById("other").checked) {
+                resultado += ", y sos no binario.";
+            } else if (document.getElementById("fluido").checked) {
+                resultado += ", y sos de genero fluido.";
+            }
+
+            document.getElementById("resultado").innerHTML = resultado;
+
+        }
+
+            
+    </script>
+
+</head>
+<body>
+    <fieldset>
+    <h1>Registro</h1>
+    <b>Nombre: </b><input type="text" name="nombre" id="nombre"><br><br>
+    <b>Correo: </b><input type="email" name="correo" id="correo"><br><br>
+    <b>Edad: </b><input type="number" name="edad" id="edad"><br><br>
+    <b>Genero: </b><br>
+    <input type="radio" name="gender" id="male"> Male <br>
+    <input type="radio" name="gender" id="female"> Female <br>
+    <input type="radio" name="gender" id="other"> Non binary <br>
+    <input type="radio" name="gender" id="fluido"> Fluido <br><br>
+    <b>Fecha de nacimiento: </b><input type="date" name="fecha" id="fecha"><br><br>
+    <b>Color favorito: </b><input type="color" name="color" id="color"><br><br>
+
+    <button type="submit" onclick="registro()">Submit</button>
+    <p id="resultado"></p>
+    </fieldset><br><br>
+
+
+    <fieldset><br><br>
+        <a href="../Portafolio.html" id="back">Volver al Inicio</a>
+        <h4>Ir a practicas:</h4>
+            <a href="P2.html">Practica 2: HTML (Formulario)</a><br>
+            <a href="P3archivo1.html">Practica 3: Fiestas Francesas</a><br>
+            <a href="P3archivo2.html">Practica 3: Las 7 Maravillas del Mundo</a><br>
+            <a href="P3archivo3.html">Practica 3: Random Images Generator</a><br>
+            <a href="P4archivo1.html">Practica 4: Evaluación de Calificaciones</a><br>
+            <a href="P4archivo2.html">Practica 4: Factoria Recursivo</a><br>
+            <a href="P5archivo1.html">Practica 5: JavaScript 2 (Formulario con tabla)</a>
+    </fieldset>
+
+</body>
+</html>

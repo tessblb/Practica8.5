@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Factorial Recursivo</title>
+    <link rel="stylesheet" href="../estilo.css">
+    <script>
+        function leer() {
+            var valor = document.getElementById("numero").value;
+            var x = parseInt(valor);
+            console.log(x);
+            var resultado = factorial(x);
+            var salida = x + "! = " + resultado;
+            document.getElementById("resultado").innerHTML = salida;
+        }
+
+        function factorial(x) {
+            if (x < 0) return "No definido";
+            if (x === 0) return 1;
+            return x * factorial(x - 1);
+        }
+
+        function borrar() {
+            document.getElementById("resultado").innerHTML = "";
+            document.getElementById("numero").value = "";
+            console.log("Borrado");
+        }
+    </script>
+</head>
+<body>
+    <fieldset>
+    <h1>Factorial Recursivo</h1>
+    <p>Ingrese un número entero positivo.</p>
+    <form action="">
+        <input type="number" min="0" id="numero">
+    </form><br>
+    <button onclick="leer()">Calcular</button>
+    <button onclick="borrar()">Borrar</button>
+    <p id="resultado"></p>
+</fieldset><br><br>
+
+<fieldset><br><br>
+    <a href="../Portafolio.html" id="back">Volver al Inicio</a>
+        <h4>Ir a practicas:</h4>
+        <a href="P2.html">Practica 2: HTML (Formulario)</a><br>
+        <a href="P3archivo1.html">Practica 3: Fiestas Francesas</a><br>
+        <a href="P3archivo2.html">Practica 3: Las 7 Maravillas del Mundo</a><br>
+        <a href="P3archivo3.html">Practica 3: Random Images Generator</a><br>
+        <a href="P4archivo1.html">Practica 4: Evaluación de Calificaciones</a><br>
+        <a href="P4archivo3.html">Practica 4: Registro</a><br>
+        <a href="P5archivo1.html">Practica 5: JavaScript 2 (Formulario con tabla)</a>
+</fieldset>
+
+</body>
+</html>
